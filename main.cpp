@@ -1,5 +1,6 @@
 #include <iostream>
 #include <StringAlgorithm.hpp>
+#include <NormalSort.hpp>
 
 
 using std::cout;
@@ -7,12 +8,10 @@ using std::endl;
 
 int main(int argc, char* argv[])
 {
-//    string *str = StringAlgorithm::ReverseWord("hello world");
-    string str = "hello world c++";
-    StringAlgorithm::ReverseString(&str, str.size(), 0);
-    cout << str<<endl;
-    StringAlgorithm::ReverseWord(&str);
-    cout<<str<<endl;
-
+    int arr[10] = {9, 7, 6, 0, 4, 3, 5, 8, 1, 2};
+    NormalSort::QuickSort(arr, 0, sizeof(arr)/ sizeof(int) - 1);
+    for (int i = 0; i < 10; ++i) {
+        cout<<arr[i]<<endl;
+    }
     return 0;
 }

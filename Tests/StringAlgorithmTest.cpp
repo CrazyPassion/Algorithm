@@ -1,7 +1,6 @@
 /* Created by vonking on 2017/9/17. Copyright (c) 2017 Steven Fung. All rights reserved. */
 
 #include <gtest/gtest.h>
-#include <gmock/gmock.h>
 #include "../Src/Include/StringAlgorithm.hpp"
 
 using namespace testing;

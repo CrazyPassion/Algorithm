@@ -8,6 +8,6 @@ include_directories(lib/googletest-1.8.0/googlemock/include)
 
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-set(SOURCE_FILES StringAlgorithmTest.cpp ../Src/Source/StringAlgorithm.cpp ../Src/Include/StringAlgorithm.hpp)
+set(SOURCE_FILES StringAlgorithmTest.cpp ../Src/Source/StringAlgorithm.cpp ../Src/Include/StringAlgorithm.hpp ../Src/Source/NormalSort.cpp ../Src/Include/NormalSort.hpp NormalSortTest.cpp)
 add_executable(ClionUnitTest ${SOURCE_FILES})
 target_link_libraries(ClionUnitTest gtest gtest_main gmock)
